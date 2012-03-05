@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Test</name>
+    </assembly>
+    <members>
+        <member name="T:Test.InserciónTest">
+            <summary>
+            Pruebas sobre la clase Inserción.
+            </summary>
+        </member>
+        <member name="T:Test.OrdenaciónTest">
+            <summary>
+            Clase que testea los diferentes métodos de ordenación.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosInt10">
+            <summary>
+            Objeto para procesar datos int de longitud 10.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosInt1000">
+            <summary>
+            Objeto para procesar datos int de longitud 1000.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosIntAscendente">
+            <summary>
+            Objeto para procesar datos int en orden ascendente.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosIntDescendente">
+            <summary>
+            Objeto para procesar datos int en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.Inciar">
+            <summary>
+            Inicialización previa.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.constructorCorrecto">
+            <summary>
+            Test que valida el funcionamiento del constructor.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestOrden">
+            <summary>
+            Test que valida el fucionamiento de la propiedad Orden.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestCorrectoAscendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int  
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestCorrectoAscendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestDescendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestDescendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestOrdenaInversoAscToDescInt">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            int previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestOrdenaInversoDescToAscInt">
+            <summary>
+            Test que verifica la ordenación en orden asscendente de un vector con datos
+            int previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nIntercambiosVectorOrdenadoAscendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nIntercambiosVectorOrdenadoDescendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nComparacionesVectoresIntAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nComparacionesVectoresIntDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="F:Test.InserciónTest.InserciónInt">
+            <summary>
+            Objeto Inserción Tipo int.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.constructorCorrecto">
+            <summary>
+            Test que valida el funcionamiento del constructor.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestOrden">
+            <summary>
+            Test que valida el fucionamiento de la propiedad Orden.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestCorrectoAscendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int  
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestCorrectoAscendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestDescendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestDescendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestOrdenaInversoAscToDescInt">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            int previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestOrdenaInversoDescToAscInt">
+            <summary>
+            Test que verifica la ordenación en orden asscendente de un vector con datos
+            int previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nIntercambiosVectorOrdenadoAscendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nIntercambiosVectorOrdenadoDescendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nComparacionesVectoresIntAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nComparacionesVectoresIntDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="T:Test.QuickSortTest">
+            <summary>
+            Pruebas sobre la clase QuickSort.
+            </summary>
+        </member>
+        <member name="F:Test.QuickSortTest.QuickSortInt">
+            <summary>
+            Objeto QuickSort Tipo int.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.constructorCorrecto">
+            <summary>
+            Test que valida el funcionamiento del constructor.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestOrden">
+            <summary>
+            Test que valida el fucionamiento de la propiedad Orden.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestCorrectoAscendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int  
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestCorrectoAscendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestDescendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestDescendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestOrdenaInversoAscToDescInt">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            int previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestOrdenaInversoDescToAscInt">
+            <summary>
+            Test que verifica la ordenación en orden asscendente de un vector con datos
+            int previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nIntercambiosVectorOrdenadoAscendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nIntercambiosVectorOrdenadoDescendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nComparacionesVectoresIntAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nComparacionesVectoresIntDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="T:Test.SelecciónTest">
+            <summary>
+            Pruebas sobre la clase Selección.
+            </summary>
+        </member>
+        <member name="F:Test.SelecciónTest.SelecciónInt">
+            <summary>
+            Objeto Selección Tipo int.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.constructorCorrecto">
+            <summary>
+            Test que valida el funcionamiento del constructor.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestOrden">
+            <summary>
+            Test que valida el fucionamiento de la propiedad Orden.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestCorrectoAscendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int  
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestCorrectoAscendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestDescendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestDescendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestOrdenaInversoAscToDescInt">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            int previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestOrdenaInversoDescToAscInt">
+            <summary>
+            Test que verifica la ordenación en orden asscendente de un vector con datos
+            int previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nIntercambiosVectorOrdenadoAscendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nIntercambiosVectorOrdenadoDescendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nComparacionesVectoresIntAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nComparacionesVectoresIntDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="T:Test.IOrdenaciónTest">
+            <summary>
+            Interfaz IOrdenaciónTest.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.Inciar">
+            <summary>
+            Inicialización previa.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.constructorCorrecto">
+            <summary>
+            Test que valida el funcionamiento del constructor.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestOrden">
+            <summary>
+            Test que valida el fucionamiento de la propiedad Orden.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestCorrectoAscendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int  
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestCorrectoAscendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestDescendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestDescendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestOrdenaInversoAscToDescInt">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            int previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestOrdenaInversoDescToAscInt">
+            <summary>
+            Test que verifica la ordenación en orden asscendente de un vector con datos
+            int previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nIntercambiosVectorOrdenadoAscendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nIntercambiosVectorOrdenadoDescendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nComparacionesVectoresIntAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nComparacionesVectoresIntDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+    </members>
+</doc>

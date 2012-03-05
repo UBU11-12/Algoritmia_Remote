@@ -1,0 +1,2292 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Test</name>
+    </assembly>
+    <members>
+        <member name="T:Test.InserciónTest">
+            <summary>
+            Pruebas sobre la clase Inserción.
+            </summary>
+        </member>
+        <member name="T:Test.OrdenaciónTest">
+            <summary>
+            Clase que testea los diferentes métodos de ordenación.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosInt10">
+            <summary>
+            Objeto para procesar datos int de longitud 10.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosInt1000">
+            <summary>
+            Objeto para procesar datos int de longitud 1000.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosChar10">
+            <summary>
+            Objeto para procesar datos char de longitud 10.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosChar1000">
+            <summary>
+            Objeto para procesar datos char de longitud 1000.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosDouble10">
+            <summary>
+            Objeto para procesar datos double de longitud 10.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosDouble1000">
+            <summary>
+            Objeto para procesar datos double de longitud 1000.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosIntAscendente">
+            <summary>
+            Objeto para procesar datos int en orden ascendente.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosIntDescendente">
+            <summary>
+            Objeto para procesar datos int en orden descendente.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosCharAscendente">
+            <summary>
+            Objeto para procesar datos char en orden ascendente.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosCharDescendente">
+            <summary>
+            Objeto para procesar datos char en orden descendente.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosDoubleAscendente">
+            <summary>
+            Objeto para procesar datos double en orden ascendente.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.datosDoubleDescendente">
+            <summary>
+            Objeto para procesar datos double en orden descendente.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.Int">
+            <summary>
+            Variable para hacer referencia al To int.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.Char">
+            <summary>
+            Variable para hacer referencia al To char.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.Double">
+            <summary>
+            Variable para hacer referencia al To double.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.históricoIntTest">
+            <summary>
+            Variable para almacenar un histórico para el tipo de datos entero.   
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.históricoCharTest">
+            <summary>
+            Variable para almacenar un histórico para el tipo de datos char.
+            </summary>
+        </member>
+        <member name="F:Test.OrdenaciónTest.históricoDoubleTest">
+            <summary>
+            Variable para almacenar un histórico para el tipo de datos double.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.Inciar">
+            <summary>
+            Inicialización previa.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.constructorCorrecto">
+            <summary>
+            Test que valida el funcionamiento del constructor.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestOrden">
+            <summary>
+            Test que valida el fucionamiento de la propiedad Orden.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestCorrectoAscendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int  
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestCorrectoAscendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestDescendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestDescendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestAscendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestAscendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestDescendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestDescendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestAscendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestAscendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestDescendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestDescendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestOrdenaInversoAscToDescInt">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            int previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestOrdenaInversoDescToAscInt">
+            <summary>
+            Test que verifica la ordenación en orden asscendente de un vector con datos
+            int previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestOrdenaInversoAscToDescChar">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            char previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestOrdenaInversoDescToAscChar">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            char previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestOrdenaInversoAscToDescDouble">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            double previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.TestOrdenaInversoDescToAscDouble">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            double previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nIntercambiosVectorOrdenadoAscendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nIntercambiosVectorOrdenadoDescendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nIntercambiosVectorOrdenadoAscendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nIntercambiosVectorOrdenadoDescendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nIntercambiosVectorOrdenadoAscendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nIntercambiosVectorOrdenadoDescendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nComparacionesVectoresIntAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nComparacionesVectoresIntDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nComparacionesVectoresCharAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nComparacionesVectoresCharDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nComparacionesVectoresDoubleAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.nComparacionesVectoresDoubleDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.ordenarHistóricoIntCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.ordenarHistóricoCharCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.ordenarHistóricoDoubleCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.ordenarHistóricoIntCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden descendente. 
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.ordenarHistóricoCharCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden descendente. 
+            </summary>
+        </member>
+        <member name="M:Test.OrdenaciónTest.ordenarHistóricoDoubleCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden descendente. 
+            </summary>
+        </member>
+        <member name="F:Test.InserciónTest.InserciónInt">
+            <summary>
+            Objeto Inserción Tipo int.
+            </summary>
+        </member>
+        <member name="F:Test.InserciónTest.InserciónChar">
+            <summary>
+            Objeto Inserción Tipo char.
+            </summary>
+        </member>
+        <member name="F:Test.InserciónTest.InserciónDouble">
+            <summary>
+            Objeto Inserción Tipo double.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.constructorCorrecto">
+            <summary>
+            Test que valida el funcionamiento del constructor.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestOrden">
+            <summary>
+            Test que valida el fucionamiento de la propiedad Orden.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestCorrectoAscendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int  
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestCorrectoAscendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestDescendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestDescendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestAscendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestAscendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestDescendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestDescendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestAscendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestAscendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestDescendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestDescendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestOrdenaInversoAscToDescInt">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            int previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestOrdenaInversoDescToAscInt">
+            <summary>
+            Test que verifica la ordenación en orden asscendente de un vector con datos
+            int previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestOrdenaInversoAscToDescChar">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            char previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestOrdenaInversoDescToAscChar">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            char previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestOrdenaInversoAscToDescDouble">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            double previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.TestOrdenaInversoDescToAscDouble">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            double previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nIntercambiosVectorOrdenadoAscendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nIntercambiosVectorOrdenadoDescendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nIntercambiosVectorOrdenadoAscendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nIntercambiosVectorOrdenadoDescendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nIntercambiosVectorOrdenadoAscendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nIntercambiosVectorOrdenadoDescendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nComparacionesVectoresIntAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nComparacionesVectoresIntDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nComparacionesVectoresCharAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nComparacionesVectoresCharDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nComparacionesVectoresDoubleAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.nComparacionesVectoresDoubleDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.ordenarHistóricoIntCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.ordenarHistóricoCharCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.ordenarHistóricoDoubleCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.ordenarHistóricoIntCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden descendente. 
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.ordenarHistóricoCharCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden descendente. 
+            </summary>
+        </member>
+        <member name="M:Test.InserciónTest.ordenarHistóricoDoubleCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden descendente. 
+            </summary>
+        </member>
+        <member name="T:Test.QuickSortTest">
+            <summary>
+            Pruebas sobre la clase QuickSort.
+            </summary>
+        </member>
+        <member name="F:Test.QuickSortTest.QuickSortInt">
+            <summary>
+            Objeto QuickSort Tipo int.
+            </summary>
+        </member>
+        <member name="F:Test.QuickSortTest.QuickSortChar">
+            <summary>
+            Objeto QuickSort Tipo char.
+            </summary>
+        </member>
+        <member name="F:Test.QuickSortTest.QuickSortDouble">
+            <summary>
+            Objeto QuickSort Tipo double.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.constructorCorrecto">
+            <summary>
+            Test que valida el funcionamiento del constructor.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestOrden">
+            <summary>
+            Test que valida el fucionamiento de la propiedad Orden.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestCorrectoAscendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int  
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestCorrectoAscendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestDescendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestDescendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestAscendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestAscendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestDescendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestDescendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestAscendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestAscendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestDescendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestDescendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestOrdenaInversoAscToDescInt">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            int previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestOrdenaInversoDescToAscInt">
+            <summary>
+            Test que verifica la ordenación en orden asscendente de un vector con datos
+            int previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestOrdenaInversoAscToDescChar">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            char previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestOrdenaInversoDescToAscChar">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            char previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestOrdenaInversoAscToDescDouble">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            double previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.TestOrdenaInversoDescToAscDouble">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            double previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nIntercambiosVectorOrdenadoAscendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nIntercambiosVectorOrdenadoDescendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nIntercambiosVectorOrdenadoAscendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nIntercambiosVectorOrdenadoDescendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nIntercambiosVectorOrdenadoAscendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nIntercambiosVectorOrdenadoDescendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nComparacionesVectoresIntAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nComparacionesVectoresIntDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nComparacionesVectoresCharAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nComparacionesVectoresCharDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nComparacionesVectoresDoubleAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.nComparacionesVectoresDoubleDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.ordenarHistóricoIntCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.ordenarHistóricoCharCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.ordenarHistóricoDoubleCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.ordenarHistóricoIntCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden descendente. 
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.ordenarHistóricoCharCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden descendente. 
+            </summary>
+        </member>
+        <member name="M:Test.QuickSortTest.ordenarHistóricoDoubleCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden descendente. 
+            </summary>
+        </member>
+        <member name="T:Test.IOrdenaciónTest">
+            <summary>
+            Interfaz IOrdenaciónTest.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.Inciar">
+            <summary>
+            Inicialización previa.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.constructorCorrecto">
+            <summary>
+            Test que valida el funcionamiento del constructor.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestOrden">
+            <summary>
+            Test que valida el fucionamiento de la propiedad Orden.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestCorrectoAscendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int  
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestCorrectoAscendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestDescendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestDescendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestAscendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestAscendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestDescendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestDescendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestAscendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestAscendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestDescendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestDescendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestOrdenaInversoAscToDescInt">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            int previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestOrdenaInversoDescToAscInt">
+            <summary>
+            Test que verifica la ordenación en orden asscendente de un vector con datos
+            int previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestOrdenaInversoAscToDescChar">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            char previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestOrdenaInversoDescToAscChar">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            char previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestOrdenaInversoAscToDescDouble">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            double previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.TestOrdenaInversoDescToAscDouble">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            double previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nIntercambiosVectorOrdenadoAscendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nIntercambiosVectorOrdenadoDescendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nIntercambiosVectorOrdenadoAscendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nIntercambiosVectorOrdenadoDescendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nIntercambiosVectorOrdenadoAscendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nIntercambiosVectorOrdenadoDescendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nComparacionesVectoresIntAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nComparacionesVectoresIntDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nComparacionesVectoresCharAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nComparacionesVectoresCharDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nComparacionesVectoresDoubleAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.nComparacionesVectoresDoubleDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.ordenarHistóricoIntCorrectoAsc">
+            <summary>
+            Test que verifica el funcionamiento del método ordenarHistórico con enteros en 
+            orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.ordenarHistóricoCharCorrectoAsc">
+            <summary>
+            Test que verifica el funcionamiento del método ordenarHistórico con caracteres en 
+            orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.ordenarHistóricoDoubleCorrectoAsc">
+            <summary>
+            Test que verifica el funcionamiento del método ordenarHistórico con doubles en 
+            orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.ordenarHistóricoIntCorrectoDesc">
+            <summary>
+            Test que verifica el funcionamiento del método ordenarHistórico con enteros en 
+            orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.ordenarHistóricoCharCorrectoDesc">
+            <summary>
+            Test que verifica el funcionamiento del método ordenarHistórico con caracteres en 
+            orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.IOrdenaciónTest.ordenarHistóricoDoubleCorrectoDesc">
+            <summary>
+            Test que verifica el funcionamiento del método ordenarHistórico con doubles en 
+            orden descendente.
+            </summary>
+        </member>
+        <member name="T:Test.SelecciónTest">
+            <summary>
+            Pruebas sobre la clase Selección.
+            </summary>
+        </member>
+        <member name="F:Test.SelecciónTest.SelecciónInt">
+            <summary>
+            Objeto Selección Tipo int.
+            </summary>
+        </member>
+        <member name="F:Test.SelecciónTest.SelecciónChar">
+            <summary>
+            Objeto Selección Tipo char.
+            </summary>
+        </member>
+        <member name="F:Test.SelecciónTest.SelecciónDouble">
+            <summary>
+            Objeto Selección Tipo double.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.constructorCorrecto">
+            <summary>
+            Test que valida el funcionamiento del constructor.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestOrden">
+            <summary>
+            Test que valida el fucionamiento de la propiedad Orden.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestCorrectoAscendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int  
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestCorrectoAscendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestDescendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestDescendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestAscendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestAscendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestDescendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestDescendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestAscendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestAscendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestDescendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestDescendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestOrdenaInversoAscToDescInt">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            int previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestOrdenaInversoDescToAscInt">
+            <summary>
+            Test que verifica la ordenación en orden asscendente de un vector con datos
+            int previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestOrdenaInversoAscToDescChar">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            char previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestOrdenaInversoDescToAscChar">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            char previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestOrdenaInversoAscToDescDouble">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            double previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.TestOrdenaInversoDescToAscDouble">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            double previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nIntercambiosVectorOrdenadoAscendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nIntercambiosVectorOrdenadoDescendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nIntercambiosVectorOrdenadoAscendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nIntercambiosVectorOrdenadoDescendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nIntercambiosVectorOrdenadoAscendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nIntercambiosVectorOrdenadoDescendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nComparacionesVectoresIntAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nComparacionesVectoresIntDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nComparacionesVectoresCharAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nComparacionesVectoresCharDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nComparacionesVectoresDoubleAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.nComparacionesVectoresDoubleDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.ordenarHistóricoIntCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.ordenarHistóricoCharCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.ordenarHistóricoDoubleCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.ordenarHistóricoIntCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden descendente. 
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.ordenarHistóricoCharCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden descendente. 
+            </summary>
+        </member>
+        <member name="M:Test.SelecciónTest.ordenarHistóricoDoubleCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden descendente. 
+            </summary>
+        </member>
+        <member name="T:Test.MergeSortTest">
+            <summary>
+            Pruebas sobre la clase MergeSort.
+            </summary>
+        </member>
+        <member name="F:Test.MergeSortTest.MergeSortInt">
+            <summary>
+            Objeto MergeSort Tipo int.
+            </summary>
+        </member>
+        <member name="F:Test.MergeSortTest.MergeSortChar">
+            <summary>
+            Objeto MergeSort Tipo char.
+            </summary>
+        </member>
+        <member name="F:Test.MergeSortTest.MergeSortDouble">
+            <summary>
+            Objeto MergeSort Tipo double.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.constructorCorrecto">
+            <summary>
+            Test que valida el funcionamiento del constructor.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestOrden">
+            <summary>
+            Test que valida el fucionamiento de la propiedad Orden.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestCorrectoAscendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int  
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestCorrectoAscendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestDescendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestDescendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestAscendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestAscendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestDescendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestDescendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestAscendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestAscendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestDescendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestDescendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestOrdenaInversoAscToDescInt">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            int previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestOrdenaInversoDescToAscInt">
+            <summary>
+            Test que verifica la ordenación en orden asscendente de un vector con datos
+            int previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestOrdenaInversoAscToDescChar">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            char previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestOrdenaInversoDescToAscChar">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            char previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestOrdenaInversoAscToDescDouble">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            double previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.TestOrdenaInversoDescToAscDouble">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            double previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.nIntercambiosVectorOrdenadoAscendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.nIntercambiosVectorOrdenadoDescendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.nIntercambiosVectorOrdenadoAscendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.nIntercambiosVectorOrdenadoDescendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.nIntercambiosVectorOrdenadoAscendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.nIntercambiosVectorOrdenadoDescendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.nComparacionesVectoresIntAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.nComparacionesVectoresIntDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.nComparacionesVectoresCharAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.nComparacionesVectoresCharDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.nComparacionesVectoresDoubleAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.nComparacionesVectoresDoubleDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.ordenarHistóricoIntCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.ordenarHistóricoCharCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.ordenarHistóricoDoubleCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.ordenarHistóricoIntCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden descendente. 
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.ordenarHistóricoCharCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden descendente. 
+            </summary>
+        </member>
+        <member name="M:Test.MergeSortTest.ordenarHistóricoDoubleCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden descendente. 
+            </summary>
+        </member>
+        <member name="T:Test.BurbujaTest">
+            <summary>
+            Pruebas sobre la clase Burbuja.
+            </summary>
+        </member>
+        <member name="F:Test.BurbujaTest.BurbujaInt">
+            <summary>
+            Objeto Burbuja Tipo int.
+            </summary>
+        </member>
+        <member name="F:Test.BurbujaTest.BurbujaChar">
+            <summary>
+            Objeto Burbuja Tipo char.
+            </summary>
+        </member>
+        <member name="F:Test.BurbujaTest.BurbujaDouble">
+            <summary>
+            Objeto Burbuja Tipo double.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.constructorCorrecto">
+            <summary>
+            Test que valida el funcionamiento del constructor.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestOrden">
+            <summary>
+            Test que valida el fucionamiento de la propiedad Orden.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestCorrectoAscendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int  
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestCorrectoAscendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestDescendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestDescendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestAscendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestAscendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestDescendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestDescendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestAscendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestAscendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestDescendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestDescendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestOrdenaInversoAscToDescInt">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            int previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestOrdenaInversoDescToAscInt">
+            <summary>
+            Test que verifica la ordenación en orden asscendente de un vector con datos
+            int previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestOrdenaInversoAscToDescChar">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            char previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestOrdenaInversoDescToAscChar">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            char previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestOrdenaInversoAscToDescDouble">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            double previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.TestOrdenaInversoDescToAscDouble">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            double previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.nIntercambiosVectorOrdenadoAscendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.nIntercambiosVectorOrdenadoDescendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.nIntercambiosVectorOrdenadoAscendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.nIntercambiosVectorOrdenadoDescendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.nIntercambiosVectorOrdenadoAscendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.nIntercambiosVectorOrdenadoDescendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.nComparacionesVectoresIntAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.nComparacionesVectoresIntDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.nComparacionesVectoresCharAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.nComparacionesVectoresCharDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.nComparacionesVectoresDoubleAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.nComparacionesVectoresDoubleDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.ordenarHistóricoIntCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.ordenarHistóricoCharCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.ordenarHistóricoDoubleCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.ordenarHistóricoIntCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden descendente. 
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.ordenarHistóricoCharCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden descendente. 
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaTest.ordenarHistóricoDoubleCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden descendente. 
+            </summary>
+        </member>
+        <member name="T:Test.BurbujaBidireccionalTest">
+            <summary>
+            Pruebas sobre la clase BurbujaBidireccional.
+            </summary>
+        </member>
+        <member name="F:Test.BurbujaBidireccionalTest.BurbujaBidireccionalInt">
+            <summary>
+            Objeto BurbujaBidireccional Tipo int.
+            </summary>
+        </member>
+        <member name="F:Test.BurbujaBidireccionalTest.BurbujaBidireccionalChar">
+            <summary>
+            Objeto BurbujaBidireccional Tipo char.
+            </summary>
+        </member>
+        <member name="F:Test.BurbujaBidireccionalTest.BurbujaBidireccionalDouble">
+            <summary>
+            Objeto BurbujaBidireccional Tipo double.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.constructorCorrecto">
+            <summary>
+            Test que valida el funcionamiento del constructor.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestOrden">
+            <summary>
+            Test que valida el fucionamiento de la propiedad Orden.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestCorrectoAscendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int  
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestCorrectoAscendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestDescendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestDescendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestAscendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestAscendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestDescendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestDescendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestAscendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestAscendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestDescendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestDescendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestOrdenaInversoAscToDescInt">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            int previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestOrdenaInversoDescToAscInt">
+            <summary>
+            Test que verifica la ordenación en orden asscendente de un vector con datos
+            int previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestOrdenaInversoAscToDescChar">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            char previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestOrdenaInversoDescToAscChar">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            char previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestOrdenaInversoAscToDescDouble">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            double previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.TestOrdenaInversoDescToAscDouble">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            double previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.nIntercambiosVectorOrdenadoAscendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.nIntercambiosVectorOrdenadoDescendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.nIntercambiosVectorOrdenadoAscendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.nIntercambiosVectorOrdenadoDescendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.nIntercambiosVectorOrdenadoAscendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.nIntercambiosVectorOrdenadoDescendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.nComparacionesVectoresIntAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.nComparacionesVectoresIntDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.nComparacionesVectoresCharAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.nComparacionesVectoresCharDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.nComparacionesVectoresDoubleAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.nComparacionesVectoresDoubleDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.ordenarHistóricoIntCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.ordenarHistóricoCharCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.ordenarHistóricoDoubleCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.ordenarHistóricoIntCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.ordenarHistóricoCharCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.BurbujaBidireccionalTest.ordenarHistóricoDoubleCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden descendente.
+            </summary>
+        </member>
+        <member name="T:Test.ShellTest">
+            <summary>
+            Pruebas sobre la clase Shell.
+            </summary>
+        </member>
+        <member name="F:Test.ShellTest.ShellInt">
+            <summary>
+            Objeto Shell Tipo int.
+            </summary>
+        </member>
+        <member name="F:Test.ShellTest.ShellChar">
+            <summary>
+            Objeto Shell Tipo char.
+            </summary>
+        </member>
+        <member name="F:Test.ShellTest.ShellDouble">
+            <summary>
+            Objeto Shell Tipo double.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.constructorCorrecto">
+            <summary>
+            Test que valida el funcionamiento del constructor.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestOrden">
+            <summary>
+            Test que valida el fucionamiento de la propiedad Orden.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestCorrectoAscendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int  
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestCorrectoAscendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestDescendenteInt10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestDescendenteInt1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestAscendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestAscendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos char
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestDescendenteChar10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos char
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestDescendenteChar1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos int
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestAscendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestAscendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestDescendenteDouble10">
+            <summary>
+            Test que verifica la ordenación de un vector de 10 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestDescendenteDouble1000">
+            <summary>
+            Test que verifica la ordenación de un vector de 1000 elementos con datos double
+            en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestOrdenaInversoAscToDescInt">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            int previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestOrdenaInversoDescToAscInt">
+            <summary>
+            Test que verifica la ordenación en orden asscendente de un vector con datos
+            int previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestOrdenaInversoAscToDescChar">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            char previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestOrdenaInversoDescToAscChar">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            char previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestOrdenaInversoAscToDescDouble">
+            <summary>
+            Test que verifica la ordenación en orden descendente de un vector con datos
+            double previamente ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.TestOrdenaInversoDescToAscDouble">
+            <summary>
+            Test que verifica la ordenación en orden ascendente de un vector con datos
+            double previamente ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.nIntercambiosVectorOrdenadoAscendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.nIntercambiosVectorOrdenadoDescendenteInt">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector int
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.nIntercambiosVectorOrdenadoAscendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.nIntercambiosVectorOrdenadoDescendenteChar">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector char
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.nIntercambiosVectorOrdenadoAscendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.nIntercambiosVectorOrdenadoDescendenteDouble">
+            <summary>
+            Test que verifica que no se realiza ningún intercambio cuando un vector double
+            está ordenado en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.nComparacionesVectoresIntAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.nComparacionesVectoresIntDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            int que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.nComparacionesVectoresCharAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.nComparacionesVectoresCharDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            char que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.nComparacionesVectoresDoubleAscendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden ascendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.nComparacionesVectoresDoubleDescendente">
+            <summary>
+            Test que verifica que se realizan más comparaciones en un vector de 1000 datos
+            doble que en otro de 10 en orden descendente.
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.ordenarHistóricoIntCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.ordenarHistóricoCharCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.ordenarHistóricoDoubleCorrectoAsc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden ascendente. 
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.ordenarHistóricoIntCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo entero en orden descendente. 
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.ordenarHistóricoCharCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo char en orden descendente. 
+            </summary>
+        </member>
+        <member name="M:Test.ShellTest.ordenarHistóricoDoubleCorrectoDesc">
+            <summary>
+            Test que verifica el comportamiento del método ordenarHistórico con datos de
+            tipo double en orden descendente. 
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,80 @@
+C:\Documents and Settings\Administrador\Escritorio\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Test.dll
+C:\Documents and Settings\Administrador\Escritorio\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Test.pdb
+C:\Documents and Settings\Administrador\Escritorio\Proyecto\MétodosDeOrdenación\Test\bin\Debug\testXML.xml
+C:\Documents and Settings\Administrador\Escritorio\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Algoritmos.dll
+C:\Documents and Settings\Administrador\Escritorio\Proyecto\MétodosDeOrdenación\Test\bin\Debug\nunit.framework.dll
+C:\Documents and Settings\Administrador\Escritorio\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Procesador.dll
+C:\Documents and Settings\Administrador\Escritorio\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Algoritmos.pdb
+C:\Documents and Settings\Administrador\Escritorio\Proyecto\MétodosDeOrdenación\Test\bin\Debug\nunit.framework.xml
+C:\Documents and Settings\Administrador\Escritorio\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Procesador.pdb
+C:\Documents and Settings\Administrador\Escritorio\Proyecto\MétodosDeOrdenación\Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\Proyecto\MétodosDeOrdenación\Test\obj\Debug\Test.dll
+C:\Documents and Settings\Administrador\Escritorio\Proyecto\MétodosDeOrdenación\Test\obj\Debug\Test.pdb
+C:\Documents and Settings\Administrador\Escritorio\CD_MORD\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Test.dll
+C:\Documents and Settings\Administrador\Escritorio\CD_MORD\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Test.pdb
+C:\Documents and Settings\Administrador\Escritorio\CD_MORD\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\testXML.xml
+C:\Documents and Settings\Administrador\Escritorio\CD_MORD\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Algoritmos.dll
+C:\Documents and Settings\Administrador\Escritorio\CD_MORD\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\nunit.framework.dll
+C:\Documents and Settings\Administrador\Escritorio\CD_MORD\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Procesador.dll
+C:\Documents and Settings\Administrador\Escritorio\CD_MORD\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Algoritmos.pdb
+C:\Documents and Settings\Administrador\Escritorio\CD_MORD\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\nunit.framework.xml
+C:\Documents and Settings\Administrador\Escritorio\CD_MORD\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Procesador.pdb
+C:\Documents and Settings\Administrador\Escritorio\CD_MORD\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\CD_MORD\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\Test.dll
+C:\Documents and Settings\Administrador\Escritorio\CD_MORD\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\Test.pdb
+C:\Documents and Settings\Administrador\Escritorio\CD_DEFINITIVO\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Test.dll
+C:\Documents and Settings\Administrador\Escritorio\CD_DEFINITIVO\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Test.pdb
+C:\Documents and Settings\Administrador\Escritorio\CD_DEFINITIVO\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\testXML.xml
+C:\Documents and Settings\Administrador\Escritorio\CD_DEFINITIVO\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Algoritmos.dll
+C:\Documents and Settings\Administrador\Escritorio\CD_DEFINITIVO\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\nunit.framework.dll
+C:\Documents and Settings\Administrador\Escritorio\CD_DEFINITIVO\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Procesador.dll
+C:\Documents and Settings\Administrador\Escritorio\CD_DEFINITIVO\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Algoritmos.pdb
+C:\Documents and Settings\Administrador\Escritorio\CD_DEFINITIVO\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\nunit.framework.xml
+C:\Documents and Settings\Administrador\Escritorio\CD_DEFINITIVO\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Procesador.pdb
+C:\Documents and Settings\Administrador\Escritorio\CD_DEFINITIVO\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrador\Escritorio\CD_DEFINITIVO\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\Test.dll
+C:\Documents and Settings\Administrador\Escritorio\CD_DEFINITIVO\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\Test.pdb
+D:\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Test.dll
+D:\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Test.pdb
+D:\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\testXML.xml
+D:\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Algoritmos.dll
+D:\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Procesador.dll
+D:\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Algoritmos.pdb
+D:\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\nunit.framework.xml
+D:\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Procesador.pdb
+D:\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\ResolveAssemblyReference.cache
+D:\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\Test.dll
+D:\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\Test.pdb
+C:\Users\Iñigo\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Test.dll
+C:\Users\Iñigo\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Test.pdb
+C:\Users\Iñigo\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\testXML.xml
+C:\Users\Iñigo\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Algoritmos.dll
+C:\Users\Iñigo\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Procesador.dll
+C:\Users\Iñigo\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Algoritmos.pdb
+C:\Users\Iñigo\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\nunit.framework.xml
+C:\Users\Iñigo\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Procesador.pdb
+C:\Users\Iñigo\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Iñigo\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\Test.dll
+C:\Users\Iñigo\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\Test.pdb
+D:\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Test.dll
+D:\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Test.pdb
+D:\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\testXML.xml
+D:\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Algoritmos.dll
+D:\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Algoritmos.pdb
+D:\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\nunit.framework.xml
+D:\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\Test.dll
+D:\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\obj\Debug\Test.pdb
+D:\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Utilidades.dll
+D:\Dropbox\Iñigo\Proyecto\Fuentes\Proyecto\MétodosDeOrdenación\Test\bin\Debug\Utilidades.pdb
+D:\Dropbox\Algoritmia\Algoritmia\AlgoritmiaUnido\Algoritmia_P1\Test\bin\Debug\Test.dll
+D:\Dropbox\Algoritmia\Algoritmia\AlgoritmiaUnido\Algoritmia_P1\Test\bin\Debug\Test.pdb
+D:\Dropbox\Algoritmia\Algoritmia\AlgoritmiaUnido\Algoritmia_P1\Test\bin\Debug\testXML.xml
+D:\Dropbox\Algoritmia\Algoritmia\AlgoritmiaUnido\Algoritmia_P1\Test\bin\Debug\Algoritmos.dll
+D:\Dropbox\Algoritmia\Algoritmia\AlgoritmiaUnido\Algoritmia_P1\Test\bin\Debug\Utilidades.dll
+D:\Dropbox\Algoritmia\Algoritmia\AlgoritmiaUnido\Algoritmia_P1\Test\bin\Debug\Algoritmos.pdb
+D:\Dropbox\Algoritmia\Algoritmia\AlgoritmiaUnido\Algoritmia_P1\Test\bin\Debug\Utilidades.pdb
+D:\Dropbox\Algoritmia\Algoritmia\AlgoritmiaUnido\Algoritmia_P1\Test\bin\Debug\nunit.framework.xml
+D:\Dropbox\Algoritmia\Algoritmia\AlgoritmiaUnido\Algoritmia_P1\Test\obj\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\Algoritmia\Algoritmia\AlgoritmiaUnido\Algoritmia_P1\Test\obj\Debug\Test.dll
+D:\Dropbox\Algoritmia\Algoritmia\AlgoritmiaUnido\Algoritmia_P1\Test\obj\Debug\Test.pdb
