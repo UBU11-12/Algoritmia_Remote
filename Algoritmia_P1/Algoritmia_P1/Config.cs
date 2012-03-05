@@ -10,7 +10,9 @@ using Algoritmos;
 
 namespace Algoritmia_P1
 {
-
+    /// <summary>
+    /// cambio iñigol
+    /// </summary>
     public struct CfgLista
     {
         public int nElementos;
