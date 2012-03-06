@@ -258,6 +258,7 @@ namespace Algoritmia_P1
 
                 //Añadir al grid los datos de la lista creada.
                 edicionGridLista(Convert.ToInt32(w.DatosFormulario.Elementos), Convert.ToInt32(w.DatosFormulario.NListas),w.DatosFormulario.ModoGeneración, Ordenado.No, entD, entO);
+                visibilidadBarra_Final();
             }
         }
 
@@ -288,8 +289,9 @@ namespace Algoritmia_P1
 
             recogeDatos();
 
-            if(hiloOrdena==null)
+            if(hiloOrdena==null||!hiloOrdena.IsAlive)
             {
+                visibilidadBarra_Ordenando();
                 hiloOrdena = new Thread(new ThreadStart(this.HiloOrdena));
                 hiloOrdena.SetApartmentState(ApartmentState.STA);
                 hiloOrdena.Start();
@@ -338,73 +340,86 @@ namespace Algoritmia_P1
             
             if (datosOrdenar.Algoritmo.CompareTo(Algoritmo.Insercion)==0)
             {
-                ord = new Inserción(datosOrdenar.Criterio);
+                
                 for (int i = 0; i < listas.Count; i++)
                 {
-                    nano.Start();
-                    listas.ElementAt(i).vectorD.Vector.CopyTo(listas.ElementAt(i).vectorO.Vector, 0);
-                    ord.Ordenar((int[])listas.ElementAt(i).vectorO.Vector);
-                    nano.Stop();
-                    //asignar los valores derivados de la ordenacion a la lista.
-                    Lista aux = listas.ElementAt(i);
-                    aux.nComparaciones = ord.NComparaciones;
-                    aux.nIntercambios = ord.NIntercambios;
-                    aux.tiempo = nano.ElapsedMilliseconds;
-                    aux.ordenado = Ordenado.Si;
-                    System.Windows.Application.Current.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Normal, (Action)delegate()
+                    if (listas.ElementAt(i).ordenado.CompareTo(Ordenado.No) == 0)
                     {
-                        listas.RemoveAt(i);
-                        listas.Insert(aux.id, aux);
-                    });
+                        ord = new Inserción(datosOrdenar.Criterio);
+                        nano.Start();
+                        listas.ElementAt(i).vectorD.Vector.CopyTo(listas.ElementAt(i).vectorO.Vector, 0);
+                        ord.Ordenar((int[])listas.ElementAt(i).vectorO.Vector);
+                        nano.Stop();
+                        //asignar los valores derivados de la ordenacion a la lista.
+                        Lista aux = listas.ElementAt(i);
+                        aux.nComparaciones = ord.NComparaciones;
+                        aux.nIntercambios = ord.NIntercambios;
+                        aux.tiempo = nano.ElapsedMilliseconds;
+                        aux.ordenado = Ordenado.Si;
+                        System.Windows.Application.Current.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Normal, (Action)delegate()
+                        {
+                            listas.RemoveAt(i);
+                            listas.Insert(aux.id, aux);
+                        });
+                    }
                 }
             }
             else if (datosOrdenar.Algoritmo.CompareTo(Algoritmo.Seleccion) == 0)
             {
-                ord = new Selección(datosOrdenar.Criterio);
+                
                 for (int i = 0; i < listas.Count; i++)
                 {
-                    nano.Start();
-                    listas.ElementAt(i).vectorD.Vector.CopyTo(listas.ElementAt(i).vectorO.Vector, 0);
-                    ord.Ordenar((int[])listas.ElementAt(i).vectorO.Vector);
-                    nano.Stop();
-                    //falta capturar los tiempos de ordenacion
-                    Lista aux = listas.ElementAt(i);
-                    aux.nComparaciones = ord.NComparaciones;
-                    aux.nIntercambios = ord.NIntercambios;
-                    aux.tiempo = nano.ElapsedMilliseconds;
-                    aux.ordenado = Ordenado.Si;
-                    System.Windows.Application.Current.Dispatcher.Invoke( System.Windows.Threading.DispatcherPriority.Normal, (Action)delegate() 
+                    if (listas.ElementAt(i).ordenado.CompareTo(Ordenado.No) == 0)
                     {
-                        listas.RemoveAt(i);
-                        listas.Insert(aux.id, aux);
-                    });
+                        ord = new Selección(datosOrdenar.Criterio);
+                        nano.Start();
+                        listas.ElementAt(i).vectorD.Vector.CopyTo(listas.ElementAt(i).vectorO.Vector, 0);
+                        ord.Ordenar((int[])listas.ElementAt(i).vectorO.Vector);
+                        nano.Stop();
+                        //falta capturar los tiempos de ordenacion
+                        Lista aux = listas.ElementAt(i);
+                        aux.nComparaciones = ord.NComparaciones;
+                        aux.nIntercambios = ord.NIntercambios;
+                        aux.tiempo = nano.ElapsedMilliseconds;
+                        aux.ordenado = Ordenado.Si;
+                        System.Windows.Application.Current.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Normal, (Action)delegate()
+                        {
+                            listas.RemoveAt(i);
+                            listas.Insert(aux.id, aux);
+                        });
+                    }
                     
                 }
             }
             else
             {
-                ord = new QuickSort(datosOrdenar.Criterio);
+                
                 for (int i = 0; i < listas.Count; i++)
                 {
-                    nano.Start();
-                    listas.ElementAt(i).vectorD.Vector.CopyTo(listas.ElementAt(i).vectorO.Vector, 0);
-                    ord.Ordenar((int[])listas.ElementAt(i).vectorO.Vector);
-                    nano.Stop();
-                    //falta capturar los tiempos de ordenacion
-                    Lista aux = listas.ElementAt(i);
-                    aux.nComparaciones = ord.NComparaciones;
-                    aux.nIntercambios = ord.NIntercambios;
-                    aux.tiempo = nano.ElapsedMilliseconds;
-                    aux.ordenado = Ordenado.Si;
-                    System.Windows.Application.Current.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Normal, (Action)delegate()
+                    if (listas.ElementAt(i).ordenado.CompareTo(Ordenado.No) == 0)
                     {
-                        listas.RemoveAt(i);
-                        listas.Insert(aux.id, aux);
+                        ord = new QuickSort(datosOrdenar.Criterio);
+                        nano.Start();
+                        listas.ElementAt(i).vectorD.Vector.CopyTo(listas.ElementAt(i).vectorO.Vector, 0);
+                        ord.Ordenar((int[])listas.ElementAt(i).vectorO.Vector);
+                        nano.Stop();
+                        //falta capturar los tiempos de ordenacion
+                        Lista aux = listas.ElementAt(i);
+                        aux.nComparaciones = ord.NComparaciones;
+                        aux.nIntercambios = ord.NIntercambios;
+                        aux.tiempo = nano.ElapsedMilliseconds;
+                        aux.ordenado = Ordenado.Si;
+                        System.Windows.Application.Current.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Normal, (Action)delegate()
+                        {
+                            listas.RemoveAt(i);
+                            listas.Insert(aux.id, aux);
 
-                    });
+                        });
+                    }
                 }
             }
             refreshGrid();
+            visibilidadBarra_Final();
         }
 
         /// <summary>
@@ -847,6 +862,7 @@ namespace Algoritmia_P1
         /// <param name="e"></param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            visibilidadBarra_Inicial();
             listas = new ObservableCollection<Lista>();
             id_click_elimina = -1;
             id_click_elimina_old = -1;
@@ -854,6 +870,98 @@ namespace Algoritmia_P1
             id_click_muestra_old = -1;
         }
 
+        /// <summary>
+        /// Metodo para establecer la visibilidad del interfaz al iniciar la aplicación.
+        /// </summary>
+        private void visibilidadBarra_Inicial()
+        {
+            System.Windows.Application.Current.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Normal, (Action)delegate()
+            {
+            dtListas.IsEnabled = true;
+            expander1.IsEnabled = false;
+            btGuardar.IsEnabled = false;
+            btOrdenar.IsEnabled = false;
+            btDetener.IsEnabled = false;
+            btLimpiar.IsEnabled = false;
+            lblOrdenacion.IsEnabled = false;
+            lblOrden.IsEnabled = false;
+            cmbOrdenacion.IsEnabled = false;
+            cmbCriterio.IsEnabled = false;
+            });
+        }
+
+        /// <summary>
+        /// Metodo para establecer la visibilidad del interfaz al iniciar la aplicación.
+        /// </summary>
+        private void visibilidadBarra_Ordenando()
+        {
+            System.Windows.Application.Current.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Normal, (Action)delegate()
+            {
+            dtListas.IsEnabled = false;
+            btAyuda.IsEnabled = false;
+            btCargar.IsEnabled = false;
+            expander1.IsEnabled = false;
+            btGuardar.IsEnabled = false;
+            btOrdenar.IsEnabled = false;
+            btDetener.IsEnabled = true;
+            btLimpiar.IsEnabled = false;
+            lblOrdenacion.IsEnabled = false;
+            lblOrden.IsEnabled = false;
+            cmbOrdenacion.IsEnabled = false;
+            cmbCriterio.IsEnabled = false;
+            });
+        }
+
+        /// <summary>
+        /// Metodo para establecer la visibilidad del interfaz tras realizar una ordenación.
+        /// </summary>
+        private void visibilidadBarra_Final()
+        {
+            System.Windows.Application.Current.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Normal, (Action)delegate()
+            {
+                expander1.IsEnabled = true;
+            dtListas.IsEnabled = true;
+            btAyuda.IsEnabled = true;
+            btCargar.IsEnabled = true;
+            expander1.IsEnabled = true;
+            btGuardar.IsEnabled = true;
+            btOrdenar.IsEnabled = true;
+            btDetener.IsEnabled = false;
+            btLimpiar.IsEnabled = true;
+            lblOrdenacion.IsEnabled = true;
+            lblOrden.IsEnabled = true;
+            cmbOrdenacion.IsEnabled = true;
+            cmbCriterio.IsEnabled = true;
+            });
+        }
+
+
+        /// <summary>
+        /// Metodo para establecer la visibilidad del interfaz si se aborta una ordenación.
+        /// </summary>
+        private void visibilidadBarra_Detener()
+        {
+            System.Windows.Application.Current.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Normal, (Action)delegate()
+            {
+                expander1.IsEnabled = false;
+                dtListas.IsEnabled = false;
+                btAyuda.IsEnabled = true;
+                btCargar.IsEnabled = true;
+                expander1.IsEnabled = true;
+                btGuardar.IsEnabled = true;
+                btOrdenar.IsEnabled = true;
+                btDetener.IsEnabled = false;
+                btLimpiar.IsEnabled = true;
+                lblOrdenacion.IsEnabled = true;
+                lblOrden.IsEnabled = true;
+                cmbOrdenacion.IsEnabled = true;
+                cmbCriterio.IsEnabled = true;
+                lblOrdenacion.IsEnabled = false;
+                lblOrden.IsEnabled = false;
+                cmbOrdenacion.IsEnabled = false;
+                cmbCriterio.IsEnabled = false;
+            });
+        }
 
         /// <summary>
         /// Detiene el proceso de ordenación.
@@ -862,11 +970,14 @@ namespace Algoritmia_P1
         /// <param name="e"></param>
         private void btDetener_Click(object sender, RoutedEventArgs e)
         {
+            visibilidadBarra_Detener();
             hiloOrdena.Abort();
         }
 
         private void btLimpiar_Click(object sender, RoutedEventArgs e)
         {
+            cmbCriterio.SelectedIndex = -1;
+            cmbOrdenacion.SelectedIndex = -1;
             id_click_elimina = -1;
             id_click_elimina_old = -1;
             id_click_muestra=-1;
@@ -878,7 +989,7 @@ namespace Algoritmia_P1
                 i++;
             }
             dtListas.ItemsSource = listas;
-            expander1.IsExpanded = false;
+            visibilidadBarra_Inicial();
             refreshGrid();
         }
 

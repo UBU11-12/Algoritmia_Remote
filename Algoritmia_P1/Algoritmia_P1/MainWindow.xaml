@@ -65,7 +65,7 @@
                 <ComboBoxItem Content="Descendente" />
             </ComboBox>
             <Button  Height="40" HorizontalAlignment="Left"  Name="btOrdenar" VerticalAlignment="Stretch" Width="45" Click="btOrdenar_Click" ToolTip="Ordenar">
-                <Image Source="/Algoritmia_P1;component/Imágenes/pie-chart_graph.ico"></Image>
+                <Image Source="/Algoritmia_P1;component/Imágenes/play.ico"></Image>
             </Button>
             <Button  Height="40" HorizontalAlignment="Left"  Name="btDetener" VerticalAlignment="Stretch" Width="45" ToolTip="Detener" Click="btDetener_Click">
                 <Image Source="/Algoritmia_P1;component/Imágenes/close_delete_2.ico" ></Image>

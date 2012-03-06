@@ -119,5 +119,10 @@ namespace Algoritmia_P1.Formularios
             confirmaDatos = false;
             Close();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            rBtAleatorio.IsChecked = true;
+        }
     }
 }
